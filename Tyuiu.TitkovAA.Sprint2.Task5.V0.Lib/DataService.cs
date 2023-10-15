@@ -31,6 +31,7 @@ namespace Tyuiu.TitkovAA.Sprint2.Task5.V0.Lib
                 case 12: if (n > 1) a.Append(Convert.ToString(n - 1) + " месяц: декабрь"); else a.Append("30 месяц: ноябрь"); break;
 
             }
+
             return "год: " + Convert.ToString(g) + " день: " + Convert.ToString(a);
         }
     }
