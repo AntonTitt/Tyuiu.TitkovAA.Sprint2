@@ -12,6 +12,7 @@ namespace Tyuiu.TitkovAA.Sprint2.Task0.V0.Test
         public void TestMethod1()
         {
             DataService dt = new DataService();
+
             bool[] a = new bool[6] { true, false, true, false, true, false };
 
             CollectionAssert.AreEqual(a, dt.GetCompareOperations(8105, 275));

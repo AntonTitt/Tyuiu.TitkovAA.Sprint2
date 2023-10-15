@@ -41,6 +41,7 @@ namespace Tyuiu.TitkovAA.Sprint2.Task0.V0
             Console.WriteLine("***************************************************************************");
             DataService dt = new DataService();
             bool[] a = dt.GetCompareOperations(8105, 275);
+
             for (int i = 0; i < 6; i++)
             {
                 Console.WriteLine(a[i]);

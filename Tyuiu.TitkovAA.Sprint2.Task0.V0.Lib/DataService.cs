@@ -18,6 +18,7 @@ namespace Tyuiu.TitkovAA.Sprint2.Task0.V0.Lib
             a[3] = y > x;
             a[4] = y <= x;
             a[5] = y >= x;
+
             return a;
         }
     }
