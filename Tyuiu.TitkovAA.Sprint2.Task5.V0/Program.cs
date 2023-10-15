@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.TitkovAA.Sprint2.Task4.V0.Lib;
 
-namespace Tyuiu.TitkovAA.Sprint2.Task4.V0
+using Tyuiu.TitkovAA.Sprint2.Task5.V0.Lib;
+
+namespace Tyuiu.TitkovAA.Sprint2.Task5.V0
 {
     class Program
     {
@@ -14,12 +15,12 @@ namespace Tyuiu.TitkovAA.Sprint2.Task4.V0
             //Console.WriteLine("*                                                                         *");
             //Console.WriteLine("***************************************************************************");
             //75симв->
-
+            DataService dt = new DataService();
             Console.Title = "Спринт #2 | Выполнил: Титков А. А. | РПСб-23-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
             Console.WriteLine("* Тема: решение задания                                                   *");
-            Console.WriteLine("* Задание #4                                                              *");
+            Console.WriteLine("* Задание #5                                                              *");
             Console.WriteLine("* Вариант #14                                                             *");
             Console.WriteLine("* Выполнил: Титков А. А. | РПСб-23-1                                      *");
             Console.WriteLine("***************************************************************************");
@@ -31,10 +32,12 @@ namespace Tyuiu.TitkovAA.Sprint2.Task4.V0
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Введите x: ");
-            int x = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите y: ");
-            int y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите год: ");
+            int g = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите месяц: ");
+            int m = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите день: ");
+            int n = Convert.ToInt32(Console.ReadLine());
 
 
 
@@ -42,9 +45,7 @@ namespace Tyuiu.TitkovAA.Sprint2.Task4.V0
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            DataService dt = new DataService();
-            Console.WriteLine(dt.Calculate(x, y));
-
+            
         }
     }
 }
